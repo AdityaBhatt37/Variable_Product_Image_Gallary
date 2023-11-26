@@ -1,0 +1,36 @@
+<!DOCTYPE HTML> 
+<html> 
+  <head> 
+     
+    <title> Image GAllery -Easy Tutorial </title> 
+    <link rel ="stylesheet" href="style.css"> 
+      </head> 
+    <body> 
+      <div class="product"> 
+        <div class="product-small-img"> 
+           
+          <img src="image1.png" onclick="myFunction(this)"> 
+          <img src="image2.webp" onclick="myFunction(this)"> 
+          <img src="image3.webp" onclick="myFunction(this)"> 
+          <img src="image4.webp" onclick="myFunction(this)"> 
+          <img src="image5.webp" onclick="myFunction(this)"> 
+      
+                     
+       </div>  
+        <div class="img-container"> 
+            <img id="imageBox" src="image2.webp"> 
+        </div> 
+        
+        </div> 
+                 
+             
+      <script>
+
+        function myFunction(smallImg)
+        {
+            var fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src;
+        }
+      </script>
+    </body> 
+    </html>
