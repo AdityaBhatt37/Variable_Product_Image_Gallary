@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow Effects</title>
+
+    <style>
+
+/*
+   With CSS you can add shadow to text and to elements.
+   ->Text-shadow
+   ->Box-shadow
+   
+   SYNTAX :
+
+   text-shadow : Horizontal_Value  Vertical_Value  Blur_Value Color;
+
+   OR
+
+   text-shadow : Horizontal Vertical Blur Spread-radius Color;
+   
+
+   ->By Adding the negative values of Horizontal and Vertical we can change
+     the direction of the shadow to the right bottom to the left top etc..
+
+
+    ABOUT BOX SHADOW
+    ->Default color of shadow is text color of div.
+    ->We can add spread-radius also.
+*/
+
+       h1{
+
+          text-shadow:3px 3px 5px red;
+
+          /*BELOW IS THE USE OF ADDING MULTIPLE SHADOW TO TEXT*/
+          text-shadow:5px 5px 7px green, 10px 3px 5px red;
+       }
+
+       #boxShadow{
+
+           width:200px;
+           height:200px;
+           background-color:aqua;
+           
+           box-shadow:-3px -3px red, 3px 3px 3px blue;
+
+       }
+
+    </style>
+</head>
+<body>
+
+<h1>THIS IS USE OF TEXT SHADOW</h1>
+
+<div id="boxShadow">THIS IS THE USE OF BOX SHADOW</div>
+
+
+</body>
+</html>

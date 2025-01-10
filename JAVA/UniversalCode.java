@@ -1,3 +1,4 @@
+package JAVA;
 /* TAKING INPUT FROM USER
 * INHERITANCE IN JAVA
 * CONCEPT OF WRAPPER CLASS IN JAVA
@@ -842,7 +843,7 @@ class paren {
 class children extends paren {
 
     void funcc() {
-
+        
         System.out.println("This is child class");
     }
 }
